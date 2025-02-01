@@ -22,7 +22,7 @@ func TestGetAPIKey(t *testing.T) {
 		},
 		"second_h": {
 			input: http.Header{"Authorization": []string{"43214234"}},
-			want:  Result{"", errors.New("malformed authorization   header")},
+			want:  Result{"", errors.New("malformed authorization header")},
 		},
 		"third_h": {
 			input: http.Header{"content/type": []string{"43214234"}},
