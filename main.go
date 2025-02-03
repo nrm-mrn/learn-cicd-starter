@@ -25,7 +25,7 @@ type apiConfig struct {
 var staticFiles embed.FS
 
 func unused() {
-	// does nothing 
+	// does nothing
 }
 func main() {
 	err := godotenv.Load(".env")
